@@ -1,0 +1,58 @@
+.switchTheme{
+    position: fixed;
+    right:-36px;
+    bottom: 50%;
+    background: #ffffff8c;
+    color: white;
+    padding: 20px 15px 20px 9px;
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.switchTheme-content{
+    margin-left: 15px;
+}
+.switchTheme-arrow{
+    position: relative;
+    animation: leftArrow 0.8s ease-in infinite alternate;
+}
+.switchTheme_optionTheme{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(44, 44, 44);
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.switchTheme_optionTheme:active{
+    transform: scale(1.2);
+}
+.switchTheme_optionTheme-color{
+    background: rgb(44, 44, 44);
+}
+
+.switchTheme_optionTheme-color-2{
+    background: violet;
+}
+
+.switchTheme:hover{
+    right:0;
+}
+
+.switchTheme-active{
+    border: solid 3px #ffffff4d;
+}
+
+@keyframes leftArrow{
+    0%{  
+        left: -2px;
+    }
+    100%{
+        left: 0;
+    }
+}

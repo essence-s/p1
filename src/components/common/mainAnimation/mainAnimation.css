@@ -1,0 +1,52 @@
+.mainAnimation{
+    position: fixed;
+    /* background: #b91616; */
+    height: 0;
+    width: 100%;
+    z-index: 3;
+    /* transition: 0.5s; */
+    animation: mainAnimationKey2 1s;
+}
+
+.mainAnimation:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: rgb(224, 224, 224);
+    transition: 0.5s;
+    animation: mainAnimationKey 1s;
+}
+.mainAnimation:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: rgb(214, 214, 214);
+    bottom: 0;
+    animation: mainAnimationKey 1s;
+    
+}
+
+@keyframes mainAnimationKey{
+    0%{
+        height: 50%;
+    }
+    100%{
+        height: 0%;
+        
+    }
+}
+
+@keyframes mainAnimationKey2{
+    0%{
+        height: 100%;
+    }
+    99%{
+        height:100%;
+    }
+    100%{
+        height: 0;
+        
+    }
+}

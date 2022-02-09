@@ -1,0 +1,69 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root {
+  
+  --font-family: 'Bebas Neue', sans-serif;
+  /* --font-family-1: 'Manrope' ,sans-serif; */
+  --font-family-1: 'Roboto', sans-serif;
+
+  --gradients-bg:linear-gradient(20deg,#550555 1.84%,#9650e6);
+  --gradients-bg-2:linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0);
+  --gradients-bg-text-2:#111111;
+
+  --gradients-text:linear-gradient(10deg,#B8E4F0 1.84%,#98BAE7);
+  /* --gradients-bar:linear-gradient(20deg,#550555 1.84%,#9650e6); */
+  /* 6E3CBC linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0); */
+  --color-bg:#7267CB;
+  --color-bg-2:#98BAE7;
+  --color-bg-3:#B8E4F0;
+  --color-bg-4:#6E3CBC;
+  
+  --color-text:#e8eff1;
+  --color-text-2:#e5e5e5;
+  --color-text-3:#222222;
+
+  --color-subtext:#FF8A71;
+  --color-footer: #303031;
+  --color-icon: #e2e6eb;
+  --color-button:#2a2d6b;
+  --color-button-2:#f3e521;
+}
+
+.black{
+  --gradients-bg:linear-gradient(20deg,#550555 1.84%,#9650e6);
+  --gradients-bg-2:linear-gradient(10deg,#39393a 1.84%,#333333);
+  --gradients-bg-text-2:#dfdfdf;
+
+  --gradients-text:linear-gradient(89.97deg,#9ab0ff 1.84%,rgb(201 255 225));
+
+  --color-bg:#272727;
+  --color-bg-2:#39393a;
+  --color-bg-3:#272835;
+  
+  --color-text:#dfdfdf;
+  --color-text-2:#BDBDBD;
+  --color-text-3:#ffffff;
+
+  --color-subtext:#FF8A71;
+  --color-footer: #202022;
+  --color-icon: #e9ecf0;
+  --color-button:#272727;
+  --color-button-2:#f3e521;
+}
+
+
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
