@@ -1,6 +1,6 @@
 import React,{useEffect, useRef, useState} from 'react';
 // import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-// import logo from '../../../assets/polloFrito.png';
+import logo from './files/logow1.svg';
 import './navbar.css';
 
 const Menu = () => (
@@ -48,8 +48,7 @@ const Navbar = () => {
                 // console.log(offsetTopElement)
                 
                 if(offsetTopElement <= scrollT){
-                    
-
+                
                     if(!(indiEleme==r)){
                         indiEleme=r
                         indiClick=true
@@ -80,6 +79,9 @@ const Navbar = () => {
                 <p>Sign in</p>
                 <button>Sign up</button>
             </div> */}
+            <div className="w1__navbar_logo">
+                <img src={logo} alt="" />
+            </div>
             <div className="w1__navbar-menu">
                 {/* {toggleMenu
                     ?<RiCloseLine color="#fff" className={giroj?"giro":""} size={27} onClick={()=>{setGiroj(true);setTimeout(()=>{setGiroj(false);setToggleMenu(false)},1000) }}/>
@@ -89,6 +91,7 @@ const Navbar = () => {
                     <RiCloseLine color="#fff" className={`closeLine ${ toggleMenu?"cGiroFin":"cGiroInicio"}`} size={27} />
                     <RiMenu3Line color="#fff" className={toggleMenu?"cGiroInicio":"cGiroFin"} size={27} />
                 </div> */}
+                
                 <div className="conCloseMenu" onClick={()=>{setToggleMenu(!toggleMenu)}}>
                     <div className={`closeLine ${ toggleMenu?"cGiroFin":"cGiroInicio"}`}>
                         <i className="fa fa-times" aria-hidden="true"></i>
@@ -114,9 +117,9 @@ const Navbar = () => {
             </div>
 
             <div className="w1__navbar-links">
-                <div className="w1__navbar-links_logo">
-                    {/* <img src={logo} alt="logo" /> */}
-                </div>
+                {/* <div className="w1__navbar-links_logo">
+                    <img src={logo} alt="logo" />
+                </div> */}
                 <div className="w1__navbar-links_container" ref={nose}>
                     <div className="w1__navbar-links_container-indice"><span></span></div>
                     <Menu/>                  

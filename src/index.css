@@ -23,6 +23,7 @@
   --color-text-2:#e5e5e5;
   --color-text-3:#222222;
 
+  --color-title:#353535;
   --color-subtext:#FF8A71;
   --color-footer: #303031;
   --color-icon: #e2e6eb;
@@ -32,12 +33,12 @@
 
 .black{
   --gradients-bg:linear-gradient(20deg,#550555 1.84%,#9650e6);
-  --gradients-bg-2:linear-gradient(10deg,#39393a 1.84%,#333333);
-  --gradients-bg-text-2:#dfdfdf;
+  --gradients-bg-2:linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0);
+  --gradients-bg-text-2:#202024;
 
   --gradients-text:linear-gradient(89.97deg,#9ab0ff 1.84%,rgb(201 255 225));
 
-  --color-bg:#272727;
+  --color-bg:#26253b;
   --color-bg-2:#39393a;
   --color-bg-3:#272835;
   
@@ -45,10 +46,11 @@
   --color-text-2:#BDBDBD;
   --color-text-3:#ffffff;
 
+  --color-title:#dadada;
   --color-subtext:#FF8A71;
   --color-footer: #202022;
   --color-icon: #e9ecf0;
-  --color-button:#272727;
+  --color-button:#bf80b4;
   --color-button-2:#f3e521;
 }
 

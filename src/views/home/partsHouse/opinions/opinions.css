@@ -22,11 +22,20 @@
 .opinions-container{
     padding: 50px 20px;
     position: inherit;
-    height: 100%;
+    /* height: 100%; */
+}
+
+.opinions-title{
+    font-size: 2.7rem;
+    color: #dddddd;
+    position: relative;
+    font-family: var(--font-family);
+    /* margin-left: 9%; */
+    text-align: center;
 }
 
 .opinions-content-card{
-    padding: 60px 0;
+    padding: 120px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,11 +47,12 @@
     background: var(--color-bg-3);
     /* width: 225px; */
     color: var(--color-text-3);
-    height: 200px;
+    /* height: 200px; */
     border-radius: 5px;
     position: relative;
-    box-shadow: 4px 4px 4px 0px #00000021;
+    box-shadow: 0px -2px 0px #ffffff2e, 2px 2px 2px #00000030;
     margin: 0 20px;
+    padding: 25px 0 ;
 }
 
 .opinions-card-img {
@@ -57,25 +67,27 @@
     border-radius: 50%;
     width: 85px;
     height: 85px;
-    border: solid #464646 3px;
+    border: solid #ffffff42 3px;
     overflow: hidden;
     position: absolute;
-    top: -40px;
-    background: white;
+    top: -82px;
+    right: -9px;
+    /* background: white; */
     object-fit: cover;
+    
    
 }
 
 .opinions-card-sec1{
-    margin-top: 55px;
+    margin: 0px 0 0 36px;
     font-size: 1.5rem;
     font-family: var(--font-family);
-    text-align: center;
+    
 }
 
 .opinions-card-sec2{
-    text-align: center;
-    padding:15px 20px;
+   
+    padding: 15px 36px 0 36px;
     font-family: var(--font-family-1);
     font-size: 0.9rem;
     /* font-weight: 600; */
@@ -85,5 +97,8 @@
 @media screen and (max-width: 700px){
     .opinions .svgOpinions{
         width: 400%;
+    }
+    .opinions-content-card{
+        padding: 90px 0;
     }
 }

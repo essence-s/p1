@@ -22,53 +22,14 @@ useEffect(()=>{
 
     let init=()=>{
 
-    slide.current.style.width=`${widthG}`
-    let slidecontainer = slide.current.querySelector('.slider-container')
-    let sizeWidthSlide=slide.current.offsetWidth
-    
-    slidecontainer.style.display='flex'
-    
-
-    // console.log(slidecontainer.children)
-    let cc=[...slidecontainer.children]
-    cc.forEach((r)=>{
-        
-        if(!r.classList.contains('contElement')){
-            let cd=document.createElement("div")
-            slidecontainer.insertBefore(cd,r).appendChild(r)
-            cd.classList.add("contElement")
-            cd.style.width=`${sizeWidthSlide/numberViews}px`
-            cd.style.display='flex'
-        }else{
-            r.style.width=`${sizeWidthSlide/numberViews}px`
-        }
-        
-    
-    })
-
-    let cp = slidecontainer.children.length
-    slidecontainer.style.width=`${sizeWidthSlide * cp}px`
-
-    let sizeSlide=slidecontainer.children[0].offsetWidth
-    slidecontainer.style.transform=`translateX(-${sizeSlide}px)`
-    if(autoPlay){
-        autoplay();
-    }
-
-    v3d();
-
-
-    }
-    init()
-    window.addEventListener('resize',()=>{
         let maximoSize=0
         resize.map(r=>{
+            
             if(r.size>maximoSize){
                 maximoSize=r.size
             }
         })
 
-        // console.log(maximoSize)
         resize.forEach(r=>{
 
             if(window.innerWidth < r.size){
@@ -79,7 +40,44 @@ useEffect(()=>{
             }
 
         })
+
+        slide.current.style.width=`${widthG}`
+        let slidecontainer = slide.current.querySelector('.slider-container')
+        let sizeWidthSlide=slide.current.offsetWidth
         
+        slidecontainer.style.display='flex'
+
+        let cc=[...slidecontainer.children]
+        cc.forEach((r)=>{
+            
+            if(!r.classList.contains('contElement')){
+                let cd=document.createElement("div")
+                slidecontainer.insertBefore(cd,r).appendChild(r)
+                cd.classList.add("contElement")
+                cd.style.width=`${sizeWidthSlide/numberViews}px`
+                cd.style.display='flex'
+            }else{
+                r.style.width=`${sizeWidthSlide/numberViews}px`
+            }
+            
+        })
+
+        let cp = slidecontainer.children.length
+        slidecontainer.style.width=`${sizeWidthSlide * cp}px`
+
+        let sizeSlide=slidecontainer.children[0].offsetWidth
+        slidecontainer.style.transform=`translateX(-${sizeSlide}px)`
+        
+
+       
+
+    }
+    v3d();
+    if(autoPlay){
+        autoplay();
+    }
+    init();
+    window.addEventListener('resize',()=>{
         init()
     })  
       

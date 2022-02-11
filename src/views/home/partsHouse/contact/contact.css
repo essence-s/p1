@@ -19,7 +19,7 @@
     padding: 4px;
     border-radius: 30px;
     margin: 50px 0;
-    display: inline-block;
+    display: inline-flex;
     overflow: hidden;
     box-shadow: 2px 2px 3px #00000017;
     transition: 0.5s;

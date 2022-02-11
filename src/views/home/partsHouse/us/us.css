@@ -47,7 +47,7 @@
 
 .us-container_titulo{
     font-size: 2.6rem;
-    color: #333333;
+    color: var(--color-title);
     position: relative;
     font-family: var(--font-family);
     margin-left: 9%;
@@ -68,7 +68,7 @@
     align-items: center;
     margin-bottom: 32px;
     background: #fdfdfd0d;
-    box-shadow: 0px -2px 0px #ffffff26;
+    box-shadow: 0px -2px 0px #ffffff26, 1px 1px 2px #00000021;
     border-radius: 6px;
     padding: 17px 22px;
 }
@@ -117,11 +117,11 @@
 }
 .us-container-img{
     position: relative;
-    margin: auto 0;
+    /* margin: auto 0; */
 }
 .us-container-img img{
     position: relative;
-    max-width: 280px;
+    max-width: 342px;
     /* height: 100%; */
 }
 
@@ -153,7 +153,7 @@
     }
 
     .us-container-img img {
-        max-width: 135px;
+        max-width: 200px;
     }
         
 

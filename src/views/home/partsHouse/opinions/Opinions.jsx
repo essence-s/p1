@@ -8,7 +8,7 @@ const Opinions = () => {
 
     let data = {
         width:"80%",
-        autoplay:false,
+        autoplay:true,
         view:3,
         transitionDurationMs:300,
         intervalDurationMs:3000,
@@ -30,16 +30,20 @@ const Opinions = () => {
 
             <ContainerMaxWidth className="opinions-container">
 
+                <div className="opinions-title">
+                    Opinions
+                </div>
+
                 <div className="opinions-content-card">
                     <Slider data={data}>
-                        {[8,2,3,4,5].map(r => {
+                        {['Pedro','Paco','Pablo','Pepito','Potter'].map(r => {
                             return(
                             <div key={r} className="opinions-card">
 
                                 <div className="opinions-card-img">
                                     <img src={gerard} alt="" />
                                 </div>
-                                <div className="opinions-card-sec1">Eduardo{r}</div>
+                                <div className="opinions-card-sec1">{r}</div>
                                 <div className="opinions-card-sec2">
                                     Son muy buenos en su Trabajo lo hacen bien no tuve ningun problema
                                 </div>
