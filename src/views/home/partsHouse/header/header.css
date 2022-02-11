@@ -30,7 +30,7 @@
     font-size: 3.2rem;
     /* margin: 0 0 0rem 0; */
     background: var(--gradients-text);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 0.95;
 }
