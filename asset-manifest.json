@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/p1/static/css/main.52f5959a.css",
+    "main.js": "/p1/static/js/main.14819a87.js",
+    "static/js/787.84194705.chunk.js": "/p1/static/js/787.84194705.chunk.js",
+    "static/media/happy3.svg": "/p1/static/media/happy3.c54b23e8a65af45bbb7d62980f4e5f36.svg",
+    "static/media/Gerard.jpg": "/p1/static/media/Gerard.c3cbb27a0b9843f55757.jpg",
+    "static/media/winners.svg": "/p1/static/media/winners.af0644b42f17bc925f792de46f59804f.svg",
+    "static/media/soporte.svg": "/p1/static/media/soporte.1e83da7e21c1d84eee7c661fb70be86a.svg",
+    "static/media/organizado.svg": "/p1/static/media/organizado.9c43503034bb818f4088dea27268fe2d.svg",
+    "static/media/header.svg": "/p1/static/media/header.4f1470f2ba5c41db4c41ddc45a2a7031.svg",
+    "static/media/logow1.svg": "/p1/static/media/logow1.847e3aad854a8046a214dcc8f8cf7bff.svg",
+    "static/media/opinions.svg": "/p1/static/media/opinions.578679f4297069e9ce8323619779a4bc.svg",
+    "static/media/benefits.svg": "/p1/static/media/benefits.60d090ec7954bfffb62a9965fb085f9e.svg",
+    "static/media/us.svg": "/p1/static/media/us.fd3a18895cc75da15f0d3430222a6b29.svg",
+    "index.html": "/p1/index.html",
+    "main.52f5959a.css.map": "/p1/static/css/main.52f5959a.css.map",
+    "main.14819a87.js.map": "/p1/static/js/main.14819a87.js.map",
+    "787.84194705.chunk.js.map": "/p1/static/js/787.84194705.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52f5959a.css",
+    "static/js/main.14819a87.js"
+  ]
+}
